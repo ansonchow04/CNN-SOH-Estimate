@@ -1,5 +1,6 @@
 __RawData__\
 *.mat
+*.xlsx
 __draw__\
 *.png
 __.vscode__\
