@@ -122,6 +122,7 @@ for dataset_ in full_dataset:
 
 plt.plot(range(len(rSOH)), rSOH.numpy(), label='Real SOH')
 plt.plot(range(len(pred_plt)), pred_plt, label='Predicted SOH (Full)')
+plt.axvline(x=train_size, color='r', linestyle='--', label='Train/Test Split')
 plt.xlabel('Cycle')
 plt.ylabel('SOH')
 plt.legend()
