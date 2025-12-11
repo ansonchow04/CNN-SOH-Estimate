@@ -2,16 +2,17 @@ import os
 import matplotlib.pyplot as plt
 import scipy.io as sio
 
-dataFile = 'data-XJTU-charge/RawData/batch-1.mat'
+dataFile = 'data-XJTU-charge/RawData/batch-'
 saveFile = 'data-XJTU-charge/draw/batch-'
 
 battery = sio.loadmat(dataFile, squeeze_me=True, struct_as_record=False)
 
 
-for i in range(1, 9):
+for i in range(1, 6+1):
     print('drawing batch ' + str(i))
+    dataFile_ = dataFile + str(i) + '.mat'
     saveFile_ = saveFile + str(i) + '/'
-    batteries = sio.loadmat(dataFile, squeeze_me=True, struct_as_record=False)
+    batteries = sio.loadmat(dataFile_, squeeze_me=True, struct_as_record=False)
     j = 1
     for battery in batteries['battery']:
         print('\tdrawing battery ' + str(j))
