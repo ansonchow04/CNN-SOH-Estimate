@@ -14,7 +14,7 @@ os.environ["KMP_DUPLICATE_LIB_OK"] = "TRUE"
 matFile = 'data-XJTU-charge/RawData/batch-1.mat'
 battery = sio.loadmat(matFile, squeeze_me=True, struct_as_record=False)
 hdfeatureFile = 'data-XJTU-charge/RawData/handcraft_features/batch-1_features.xlsx'
-savePath = 'data-XJTU-charge/Results/'
+savePath = 'Results/'
 # battery 1
 battery1 = battery['battery'][0]
 
