@@ -1,4 +1,0 @@
-RawData/*.mat, *.xlsx
-data-XJTU-charge/**/*.png
-data-XJTU-charge/RawData/*.mat
-.vscode/*.json
