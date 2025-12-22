@@ -62,17 +62,15 @@ plt.legend()
 plt.grid()
 
 plt.subplot(1, 2, 2)
-plt.scatter(test_targets, test_preds, alpha=0.6)
+plt.scatter(test_targets, test_preds, alpha=0.6, label='Predicted')
 plt.plot([test_targets.min(), test_targets.max()],
          [test_targets.min(), test_targets.max()],
          'r--', linewidth=2, label='Perfect Prediction')
-plt.xlabel("True SOH")
-plt.ylabel("Predicted SOH")
 plt.title('Scatter Plot of True vs Predicted SOH')
 plt.legend()
 plt.grid(True)
 
 plt.tight_layout()
-plt.savefig('Results/test_results.png', dpi=150)
+plt.savefig('Results/test_results.png', dpi=300)
 plt.show()
 print('测试结果图已保存')
